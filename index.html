@@ -1,0 +1,185 @@
+```html
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GG Training</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>GG Training</h1>
+        <h2>Greta Myntti</h2>
+        <p>Kaikille soveltuvaa liikuntaa positiivisella fiiliksellä!</p>
+    </header>
+
+    <main>
+
+        <!-- JavaScript-tehtävä: päivän neuvo -->
+        <section class="neuvo-osio">
+            <h2>Päivän terveellinen ruokavinkki</h2>
+
+            <p>
+                Hae uusi ruokaidea painamalla painiketta.            </p>
+
+            <button id="haeNappi" type="button">
+                Hae päivän vinkki
+            </button>
+
+            <p id="tulos" aria-live="polite">
+                Päivän ruokavinkki tulee näkyviin tähän.
+            </p>
+        </section>
+
+        <!-- Ajanvaraus -->
+        <section>
+            <button id="ajanvarausNappi" type="button">
+                Siirry ajanvaraukseen
+            </button>
+        </section>
+
+        <hr>
+
+        <!-- Tietoa palveluista -->
+        <section>
+            <div class="korttiryhmä">
+
+                <a href="about.html">Tietoa minusta</a>
+
+                <img
+                    src="joogakuva.jpg"
+                    alt="Liikuntaa luonnossa"
+                    width="324"
+                    height="362"
+                >
+
+                <div class="kortti">
+                    <ul class="kortti-lista">
+                        <li>Ryhmäliikuntatunnit</li>
+                        <li>Positiivisuus- ja kiitollisuusluennot</li>
+                        <li>Tykypäivät, polttarit ja synttärit</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Ohjatut tunnit -->
+        <section>
+            <h2>Ohjatut tunnit / syksy 2026</h2>
+
+           
+<!-- Ohjatut tunnit -->
+<section class="tunnit-osio">
+    <h2>Ohjatut tunnit / syksy 2026</h2>
+
+    <p>
+        Valitse paikkakunta tai viikonpäivä nähdäksesi
+        sinulle sopivat tunnit.
+    </p>
+
+    <div class="tunti-haku">
+        <label for="kaupunkiValinta">Paikkakunta:</label>
+        <select id="kaupunkiValinta">
+            <option value="kaikki">Kaikki paikkakunnat</option>
+            <option value="Vaasa">Vaasa</option>
+            <option value="Merikaarto">Merikaarto</option>
+            <option value="Vähäkyrö">Vähäkyrö</option>
+        </select>
+
+        <label for="paivaValinta">Viikonpäivä:</label>
+        <select id="paivaValinta">
+            <option value="kaikki">Kaikki päivät</option>
+            <option value="Tiistai">Tiistai</option>
+            <option value="Keskiviikko">Keskiviikko</option>
+            <option value="Torstai">Torstai</option>
+            <option value="Perjantai">Perjantai</option>
+            <option value="Sunnuntai">Sunnuntai</option>
+        </select>
+    </div>
+
+    <p id="tuntiMaara" aria-live="polite">
+        Kaikki tunnit näkyvät alla.
+    </p>
+
+    <div id="tuntiLista" class="tunti-lista">
+
+        <article class="tunti-kortti"
+                 data-kaupunki="Merikaarto"
+                 data-paiva="Tiistai">
+            <h3>Tiistai</h3>
+            <p><strong>Tunti:</strong> Tanssimix / Lavis</p>
+            <p><strong>Aika:</strong> klo 18–19</p>
+            <p><strong>Paikka:</strong> Merikaarron koulu, Merikaarto</p>
+        </article>
+
+        <article class="tunti-kortti"
+                 data-kaupunki="Vähäkyrö"
+                 data-paiva="Keskiviikko">
+            <h3>Keskiviikko</h3>
+            <p><strong>Tunti:</strong> Kahvakuula</p>
+            <p><strong>Aika:</strong> klo 18.30–19.30</p>
+            <p><strong>Paikka:</strong> Savilahden koulu, Vähäkyrö</p>
+        </article>
+
+        <article class="tunti-kortti"
+                 data-kaupunki="Vaasa"
+                 data-paiva="Torstai">
+            <h3>Torstai</h3>
+            <p><strong>Tunti:</strong> Lavis</p>
+            <p><strong>Aika:</strong> klo 17.30–18.30</p>
+            <p><strong>Paikka:</strong> Keskuskoulu, Vaasa</p>
+        </article>
+
+        <article class="tunti-kortti"
+                 data-kaupunki="Vaasa"
+                 data-paiva="Perjantai">
+            <h3>Perjantai</h3>
+            <p><strong>Tunti:</strong> Lavis</p>
+            <p><strong>Aika:</strong> klo 17.30–18.30</p>
+            <p><strong>Paikka:</strong> Kasarmi, Vaasa</p>
+        </article>
+
+        <article class="tunti-kortti"
+                 data-kaupunki="Vähäkyrö"
+                 data-paiva="Sunnuntai">
+            <h3>Sunnuntai</h3>
+            <p><strong>Tunti:</strong> Kuntojumppa</p>
+            <p><strong>Aika:</strong> klo 18–19</p>
+            <p><strong>Paikka:</strong> Kyrölä, Vähäkyrö</p>
+        </article>
+
+    </div>
+
+    <p>Tervetuloa mukaan liikkumaan!</p>
+</section>
+```
+
+            
+        </section>
+
+        <!-- Yhteystiedot -->
+        <section>
+            <h2>Yhteystiedot</h2>
+
+            <p>
+                Greta Myntti<br>
+                GG Training<br>
+                Puh. <a href="tel:+358449727176">044 972 7176</a><br>
+                <a href="mailto:greta.myntti@gmail.com">
+                    greta.myntti@gmail.com
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <!-- JavaScript-tiedosto -->
+    <script src="script.js"></script>
+</body>
+</html>
+```
